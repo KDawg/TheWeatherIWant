@@ -2,8 +2,8 @@ TheWeatherIWant::Application.routes.draw do
 
   get "weather/create"
   get "weather/message"
-  get "weather/read"
   get "weather/sendto"
+  get "weather/read"
 
 
   # The priority is based upon order of creation:
