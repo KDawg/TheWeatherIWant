@@ -1,0 +1,16 @@
+<h1>Create The Weather</h1>
+
+<ul>
+  <li>Location: <input id="location" type="text" value="<%= @location %>"/></li>
+  <li>Start Date: <input id="startDate" type="text" value="<%= @cur_time %>"/></li>
+
+  <% @conditions.each do |cond| %>
+    <li>Day's Temperature: <%= cond[:temp] %></li>
+  <% end %>
+</ul>
+
+<h3>Actions</h3>
+<ul>
+  <li><a href="/weather/create">Back</a></li>
+  <li><%= link_to "Message", weather_message_path, :id => "weatherMessage", :class => "WeatherMessage" %></li>
+</ul>
